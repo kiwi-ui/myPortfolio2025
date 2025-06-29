@@ -1,0 +1,55 @@
+:root {
+    --background: #ffffff;
+    --color-primary: rgb(59, 113, 178);
+    --color-secondary: white;
+    --footer: hsla(0,0%,7%,0.02);
+    --text: #121212;
+    --icon: rgb(0, 0, 0);
+}
+[data-theme="dark"] {
+  --background: #282c34;
+  --surface: #FFFFFF;
+  --on-background: #333333;
+  --footer: hsla(0,0%,100%,0.10);
+  --on-surface: #333333;
+  --text: #FFFFFF;
+  --primary: #333333;
+  --icon: #FFFFFF;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p, a, u, h1, h2, h3, h4, h5, h6 {
+  color: var(--text) !important;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background) !important;
+}
+nav>.container>.navbar-nav>a{
+    padding-bottom:2px;
+  background-image: linear-gradient(var(--color-primary), var(--color-primary) 0 0);
+  background-position: 0 100%; 
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s; /*change after the size immediately*/
+}
+nav>.container>.navbar-nav>a:hover{
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+button, .btn {
+    background-color: var(--color-primary) !important;
+}
+.badge {
+    color: var(--background) !important;
+    background-color: var(--icon) !important;
+}   
+footer {
+    background-color: var(--footer) !important;
+    color: var(--text) !important;
+}
