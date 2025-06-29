@@ -53,3 +53,6 @@ footer {
     background-color: var(--footer) !important;
     color: var(--text) !important;
 }
+.active {
+    color: var(--color-primary) !important;
+}

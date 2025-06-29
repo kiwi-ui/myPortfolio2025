@@ -1,16 +1,14 @@
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap"
 import { Link, useLocation } from "react-router-dom";
+import ya from '../../assets/ya.png';
 const Header = () => {
   const location = useLocation();
+  
   return (
-     <Navbar expand="lg" className="">
+     <Navbar expand="lg" className="mt-3">
         <Container className="">
             <Navbar.Brand as={Link} className="d-flex flex-row gap-3 align-items-center" to="/">
-                <a className="p-2 rounded-3 text-white fs-4 fw-bold" style={{background: "rgb(4,68,144)"}}>YA</a>
-                <Navbar.Collapse className="align-items-start my-2 flex-column text-start">
-                    <p className="mb-0 fw-semibold d-block">Yusni Anggara</p>
-                    <p className="mb-0 text-secondary d-block">Developer</p>
-                </Navbar.Collapse>
+                <img src={ya} alt="Yusni Anggara Logo" className="" style={{ width: "50px", height: "50px" }} />
             </Navbar.Brand>
             
             <Nav justify variant="underline" className="flex-row justify-content-center">
