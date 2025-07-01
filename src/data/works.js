@@ -1,7 +1,7 @@
 import lavin from '../assets/lavin.png';
 import comproDvt from '../assets/compro divition.png';
 import comproLavin from '../assets/lavincompro.png';
-
+import kuisioner from '../assets/kuisioner.png';
 const Works = [
   {
     id: 1,
@@ -32,6 +32,16 @@ const Works = [
         "Divition's company profile website that highlights the services and capabilities of Divition, a prominent player in its field. The site is crafted to be engaging and informative, offering visitors insights into the company's mission and solutions.",
     technologies: ["FaReact", "FaBootstrap", "RiFirebaseFill"],
     link:'https:divition.my.id'
+  },
+  {
+    id: 4,
+    title: "Kusioner",
+    subtitle: "Survey Form",
+    image: kuisioner,
+    description:
+        "A web that allows users to collect data survey from respondents. It provides a user-friendly interface for creating and distributing surveys.",
+    technologies: ["FaReact", "FaBootstrap", "LuFileSpreadsheet"],
+    link: 'https://isiinperpuspmk.vercel.app'
   }
 ];
 

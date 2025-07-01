@@ -5,6 +5,7 @@ import { IoLogoIonic } from 'react-icons/io';
 import { SiMysql } from 'react-icons/si';
 import { BsFiletypeScss } from 'react-icons/bs';
 import { RiFirebaseFill } from 'react-icons/ri';
+import {LuFileSpreadsheet} from 'react-icons/lu';
 import { Link } from "react-router-dom";
 
 const Work = () => {
@@ -17,6 +18,7 @@ const Work = () => {
   FaHtml5: <FaHtml5 />,
   BsFiletypeScss: <BsFiletypeScss />,
   RiFirebaseFill: <RiFirebaseFill />,
+  LuFileSpreadsheet: <LuFileSpreadsheet /> 
 };
   return (
     <section>
@@ -27,7 +29,7 @@ const Work = () => {
                 <u className="underline d-block fw-lighter opacity-50" style={{textUnderlineOffset: "0.7rem"}}>{job.subtitle}</u>
                 <Link className="text-decoration-none" to={job.link} target="_blank">
                     <Image 
-                      fluid className="w-100 mt-4 border border-2 border-black rounded-2" 
+                      fluid className="w-100 mt-4 border border-2 border-black rounded-5" 
                       src={job.image} 
                       alt="Card image" rounded
                     />
